@@ -51,7 +51,6 @@ pub(super) mod convert {
             // Which is the opposite convention we use.
             let mut line_string = line_string_from_path(path);
             line_string.close();
-            line_string.0.reverse();
             line_string
         });
         let exterior = rings.next().unwrap_or(LineString::new(vec![]));
